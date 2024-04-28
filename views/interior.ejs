@@ -1,0 +1,74 @@
+<html>
+  <body>
+    <% include header.ejs %>
+    <figure>
+        <img src="https://picsum.photos/800">
+        <img src="https://picsum.photos/801">
+        <img src="https://picsum.photos/802">
+        <img src="https://picsum.photos/803">
+        <img src="https://picsum.photos/804">
+        <img src="https://picsum.photos/805">
+        <img src="https://picsum.photos/806">
+        <img src="https://picsum.photos/807">
+        <img src="https://picsum.photos/808">
+        <img src="https://picsum.photos/809">
+        <img src="https://picsum.photos/810">
+        <img src="https://picsum.photos/811">
+        <img src="https://picsum.photos/812">
+        <img src="https://picsum.photos/813">
+        <img src="https://picsum.photos/814">
+        <img src="https://picsum.photos/815">
+        <img src="https://picsum.photos/816">
+        <img src="https://picsum.photos/817">
+        <img src="https://picsum.photos/818">
+     </figure>
+     <style>
+        figure {
+            padding: 30px 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: auto;
+    grid-auto-flow: dense;
+    justify-items: stretch; 
+    align-items: stretch; 
+    gap: 2svmin;
+}
+
+img {
+   width:100%;
+   aspect-ratio: 16 / 9;
+   object-fit: cover;
+}
+
+@media (min-width:500px) {
+   figure {
+   grid-template-columns: repeat(2, 1fr);
+   }  
+   img:nth-of-type(11) {
+   grid-row: span 2 / auto;
+  }
+}
+
+@media (min-width:1000px) {
+   figure {
+   grid-template-columns: repeat(4, 1fr);
+   gap: 1svmin;
+   }  
+  
+   img:where(:nth-of-type(3), :nth-of-type(12)) {
+   grid-row: span 2 / auto;
+   grid-column: span 2 / auto;
+   }
+
+   img:nth-of-type(5) {
+   grid-column: span 2 / auto;
+   }
+  
+   img:nth-of-type(15) {
+   grid-column: span 2 / auto;
+   }
+}
+     </style>
+     <% include footer.ejs %>
+  </body>
+</html>

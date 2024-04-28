@@ -1,0 +1,137 @@
+
+    <html>
+        <body>
+          <% include header.ejs %>
+          <div>
+            <figure>
+                <img src='/img/exterior/exterior1.jpg'>
+                <img src='/img/exterior/exterior2.jpg'>
+                <img src='/img/exterior/exterior3.jpg'>
+                <img src='/img/exterior/exterior4.jpg'>
+                <img src='/img/exterior/exterior5.jpg'>
+                <img src='/img/exterior/exterior6.jpg'>
+                <img src='/img/exterior/exterior7.jpg'>
+                <img src='/img/exterior/exterior8.jpg'>
+                <img src='/img/exterior/exterior9.jpg'>
+                <img src='/img/exterior/exterior10.jpg'>
+                <img src='/img/exterior/exterior11.jpg'>
+                <img src='/img/exterior/exterior12.jpg'>
+                <img src='/img/exterior/exterior13.jpg'>
+                <img src='/img/exterior/exterior14.jpg'>
+                <img src='/img/exterior/exterior15.jpg'>
+                <img src='/img/exterior/exterior16.jpg'>
+                <img src='/img/exterior/exterior17.jpg'>
+                <img src='/img/exterior/exterior18.jpg'>
+                <img src='/img/exterior/exterior19.jpg'>
+                <img src='/img/exterior/exterior20.jpg'>
+                <img src='/img/exterior/exterior21.jpg'>
+                <img src='/img/exterior/exterior22.jpg'>
+                <img src='/img/exterior/exterior23.jpg'>
+                <img src='/img/exterior/exterior24.jpg'>
+                <img src='/img/exterior/exterior25.jpg'>
+                <img src='/img/exterior/exterior26.jpg'>
+     
+
+             </figure>
+             <style>
+                figure {
+                    padding: 0px 20px;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-auto-rows: auto;
+            grid-auto-flow: dense;
+            justify-items: stretch; 
+            align-items: stretch; 
+            gap: 2svmin;
+        }
+        
+        img {
+           width:100%;
+           aspect-ratio: 16 / 9;
+           object-fit: cover;
+        }
+        
+        @media (min-width:500px) {
+           figure {
+           grid-template-columns: repeat(2, 1fr);
+           }  
+           img:nth-of-type(11) {
+           grid-row: span 2 / auto;
+          }
+        }
+        
+        @media (min-width:1000px) {
+           figure {
+           grid-template-columns: repeat(4, 1fr);
+           gap: 1svmin;
+           }  
+          
+           img:where(:nth-of-type(3), :nth-of-type(12)) {
+           grid-row: span 2 / auto;
+           grid-column: span 2 / auto;
+           }
+        
+           img:nth-of-type(5) {
+           grid-column: span 2 / auto;
+           }
+          
+           img:nth-of-type(15) {
+           grid-column: span 2 / auto;
+           }
+        }
+             </style>
+         </div>
+
+         <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImg">
+          </div>
+          
+          <style>
+          /* Modal Styles */
+          .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 50px;
+            width: 100%;
+            height: 100%;
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(26, 25, 25); /* Fallback color */
+            background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+          }
+          
+          /* Modal Content (image) */
+          .modal-content {
+            top: 100px;
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+          }
+          
+          /* Close Button */
+          .close {
+            position: absolute;
+            top: 45px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+          }
+          
+          .close:hover,
+          .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+          }
+          </style>
+
+           <% include footer.ejs %>
+        </body>
+      </html>
+      
+  
