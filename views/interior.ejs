@@ -2,25 +2,29 @@
   <body>
     <% include header.ejs %>
     <figure>
-        <img src="https://picsum.photos/800">
-        <img src="https://picsum.photos/801">
-        <img src="https://picsum.photos/802">
-        <img src="https://picsum.photos/803">
-        <img src="https://picsum.photos/804">
-        <img src="https://picsum.photos/805">
-        <img src="https://picsum.photos/806">
-        <img src="https://picsum.photos/807">
-        <img src="https://picsum.photos/808">
-        <img src="https://picsum.photos/809">
-        <img src="https://picsum.photos/810">
-        <img src="https://picsum.photos/811">
-        <img src="https://picsum.photos/812">
-        <img src="https://picsum.photos/813">
-        <img src="https://picsum.photos/814">
-        <img src="https://picsum.photos/815">
-        <img src="https://picsum.photos/816">
-        <img src="https://picsum.photos/817">
-        <img src="https://picsum.photos/818">
+        <img src="/img/interior/anoop- interior/1.1.png">
+        <img src="/img/interior/anoop- interior/1.2.png">
+        <img src="/img/interior/anoop- interior/3.png">
+        <img src="/img/interior/anoop- interior/4.png">
+        <img src="/img/interior/anoop- interior/5.png">
+        <img src="/img/interior/anoop- interior/6.png">
+        <img src="/img/interior/anoop- interior/7.png">
+        <img src="/img/interior/anoop- interior/8.png">
+        <img src="/img/interior/anoop- interior/9.png">
+        <img src="/img/interior/anoop- interior/10.png">
+        <img src="/img/interior/anoop- interior/11.png">
+        <img src="/img/interior/anoop- interior/12.png">
+        <img src="/img/interior/kakkodi/1.jpg">
+        <img src="/img/interior/kakkodi/2.jpg">
+        <img src="/img/interior/kakkodi/3.jpg">
+        <img src="/img/interior/kakkodi/4.jpg">
+        <img src="/img/interior/shuhaib - interior/1.1.png">
+        <img src="/img/interior/shuhaib - interior/1.2.png">
+        <img src="/img/interior/shuhaib - interior/1.jpg">
+        <img src="/img/interior/shuhaib - interior/2.png">
+        <img src="/img/interior/shuhaib - interior/3.1.png">
+        <img src="/img/interior/shuhaib - interior/3.png">
+        <img src="/img/interior/shuhaib - interior/hall.png">
      </figure>
      <style>
         figure {
@@ -69,6 +73,54 @@ img {
    }
 }
      </style>
+
+<div id="myModal" class="modal">
+   <span class="close">&times;</span>
+   <img class="modal-content" id="modalImg">
+ </div>
+ 
+ <style>
+ /* Modal Styles */
+ .modal {
+   display: none; /* Hidden by default */
+   position: fixed; /* Stay in place */
+   z-index: 1; /* Sit on top */
+   left: 0;
+   top: 50px;
+   width: 100%;
+   height: 100%;
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgb(26, 25, 25); /* Fallback color */
+   background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+ }
+ 
+ /* Modal Content (image) */
+ .modal-content {
+   top: 100px;
+   margin: auto;
+   display: block;
+   width: 80%;
+   max-width: 700px;
+ }
+ 
+ /* Close Button */
+ .close {
+   position: absolute;
+   top: 45px;
+   right: 35px;
+   color: #f1f1f1;
+   font-size: 40px;
+   font-weight: bold;
+   transition: 0.3s;
+ }
+ 
+ .close:hover,
+ .close:focus {
+   color: #bbb;
+   text-decoration: none;
+   cursor: pointer;
+ }
+ </style>
      <% include footer.ejs %>
   </body>
 </html>
