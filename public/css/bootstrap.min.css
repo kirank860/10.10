@@ -117,6 +117,11 @@ h3,
     font-size: calc(1rem + 0.6vw);
   }
 }
+@media(max-width:350px){
+  h3, .h3 {
+    font-size: calc(.8rem + 0.6vw);
+  }
+}
 
 @media (min-width: 1200px) {
   h3,
